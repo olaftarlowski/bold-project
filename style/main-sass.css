@@ -1,17 +1,63 @@
 body {
   background-color: aqua;
-  font-family: 'Lato', sans-serif;
-  margin: 0;
 }
 
 .full-content {
   max-width: 1440px;
   margin: 0 auto;
+  font-family: 'Lato', sans-serif;
   border: 1px solid black;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 .hero-banner {
@@ -95,7 +141,14 @@ h1, h2, h3, h4, h5, h6, p {
   border: none;
   font-weight: 600;
   cursor: pointer;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
   color: #D52047;
   background-color: #fff;
+}
+
+.hero-banner .hero-banner__content .hero-banner__button:hover {
+  color: #fff;
+  background-color: #D52047;
 }
 /*# sourceMappingURL=main-sass.css.map */
