@@ -1,0 +1,56 @@
+.hero-banner {
+    position: relative;
+    height: auto;
+    width: 100%;
+    color: $colorWhite;
+    overflow: hidden;
+    text-align: center;
+    background: linear-gradient(90deg, $colorRed 0%, $colorOrange 100%);
+    @include flexCenter(null);
+
+
+    .hero-bg-img {
+        opacity: 0.2;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-banner__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+        @include flexCenter(column);
+
+        .hero-banner__headline {
+            margin-top: 72px;
+            margin-bottom: 39px;
+
+            h1 {
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 86px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            }
+        }
+
+        .hero-banner__parag {
+            margin-bottom: 39px;
+            max-width: 35%;
+            height: 124px;
+
+             p {
+                font-size: 24px;
+                line-height: 36px;
+             }
+        }
+
+        .hero-banner__button {
+            @include button($colorRed, $colorWhite);
+        }
+    }
+}
+
