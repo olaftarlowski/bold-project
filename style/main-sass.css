@@ -228,6 +228,12 @@ input {
   background-color: #FAFAFA;
 }
 
+@media (max-width: 1280px) {
+  .features-section {
+    height: 600px;
+  }
+}
+
 .features-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,6 +255,12 @@ input {
   height: 55px;
   margin-top: 63px;
   color: #000;
+}
+
+@media (max-width: 1280px) {
+  .features-block__headline {
+    width: 90%;
+  }
 }
 
 .features-block__headline h2 {
@@ -278,19 +290,66 @@ input {
 .features-container .features-container__item {
   position: relative;
   margin: 0 15px;
+  max-width: 350px;
+}
+
+@media (max-width: 1280px) {
+  .features-container .features-container__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 8px;
+  }
+}
+
+.features-container .features-container__item .features-bg-img {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .features-container .features-container__item .features-bg-img {
+    width: 80%;
+  }
 }
 
 .features-container .features-container__item .features-container__text {
   position: absolute;
   top: 157px;
-  left: 29px;
+  left: 0;
   text-align: center;
+  margin: 0 28px 0 29px;
   width: 293px;
   height: 198px;
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+}
+
+@media (max-width: 1280px) {
+  .features-container .features-container__item .features-container__text {
+    top: calc(157px - 15%);
+    right: 0;
+    width: 70%;
+    height: 75%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .features-container .features-container__item .features-container__text .features-container__headline {
@@ -301,26 +360,69 @@ input {
   color: #101010;
 }
 
+@media (max-width: 1280px) {
+  .features-container .features-container__item .features-container__text .features-container__headline {
+    margin: 0.5vw 1vw;
+    width: auto;
+    height: auto;
+    height: 40px;
+  }
+}
+
 .features-container .features-container__item .features-container__text .features-container__headline h3 {
   font-size: 18px;
   line-height: 22px;
+}
+
+@media (max-width: 1280px) {
+  .features-container .features-container__item .features-container__text .features-container__headline h3 {
+    font-size: 1.4vw;
+    line-height: 120%;
+  }
 }
 
 .features-container .features-container__item .features-container__text .features-container__parag {
   margin: 20px auto 5px;
   width: 229px;
   height: 57px;
+  font-weight: 600;
   color: #101010;
 }
 
+@media (max-width: 1280px) {
+  .features-container .features-container__item .features-container__text .features-container__parag {
+    margin: 0.5vw 1vw;
+    width: auto;
+    height: auto;
+  }
+}
+
 .features-container .features-container__item .features-container__text .features-container__parag p {
-  font-weight: 600;
   font-size: 12px;
   line-height: 18px;
 }
 
+@media (max-width: 1280px) {
+  .features-container .features-container__item .features-container__text .features-container__parag p {
+    font-size: 1.1vw;
+    line-height: normal;
+    font-weight: normal;
+    width: auto;
+  }
+}
+
 .features-container .features-container__item .features-container__text .features-container__link {
+  width: 253px;
+  height: 18px;
+  margin: 0 auto;
   font-weight: bold;
+}
+
+@media (max-width: 1280px) {
+  .features-container .features-container__item .features-container__text .features-container__link {
+    width: auto;
+    height: auto;
+  }
 }
 
 .features-container .features-container__item .features-container__text .features-container__link a {
@@ -329,5 +431,12 @@ input {
   text-decoration: none;
   text-transform: capitalize;
   color: #ED4C5C;
+}
+
+@media (max-width: 1280px) {
+  .features-container .features-container__item .features-container__text .features-container__link a {
+    font-size: 1.1vw;
+    line-height: normal;
+  }
 }
 /*# sourceMappingURL=main-sass.css.map */

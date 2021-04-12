@@ -1,6 +1,10 @@
 .features-section {
     height: 660px;
     background-color: $colorGray;
+
+    @include desktop {
+        height: 600px;
+    }
 }
 
 .features-block {
@@ -12,6 +16,10 @@
     height: 55px; 
     margin-top: 63px;
     color: $colorBlack;
+
+    @include desktop {
+        width: 90%;
+    }
 
     h2 {
         font-weight: 600;
@@ -32,19 +40,47 @@
     .features-container__item {
         position: relative;
         margin: 0 15px;
+        max-width: 350px;
+
+        @include desktop {
+            display: flex;
+            margin: 0 8px;
+        }
+
+        .features-bg-img {
+            width: 100%;
+            height: auto;
+            max-width: 350px;
+            margin: 0 auto;
+
+            @include desktop {
+                width: 80%;
+            }
+        }
     
     
         .features-container__text {
             position: absolute;
             top: 157px;
-            left: 29px;
+            left: 0;
             text-align: center;
+            margin: 0 28px 0 29px;
     
             width: 293px;
             height: 198px;
             background-color: $colorWhite;
             box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+
+            @include desktop {
+                top: calc(157px - 15%);
+                right: 0;
+                width: 70%;
+                height: 75%;
+                margin: 0 auto;
+
+                @include flexCenter(column);
+            }
     
             .features-container__headline {
                 margin: 33px auto 0;
@@ -54,10 +90,22 @@
                 font-weight: bold;
                 color: $colorLightBlack;
 
+                @include desktop {
+                    margin: 0.5vw 1vw;
+                    @include widthHeightResponsive;
+                    height: 40px;
+                }
+
     
                 h3 {
                     font-size: 18px;
                     line-height: 22px;
+
+                    @include desktop {
+                        font-size: 1.4vw;
+                        line-height: 120%;
+                        
+                    }
                 }
             }
     
@@ -66,17 +114,37 @@
 
                 width: 229px;
                 height: 57px;
+                font-weight: 600;
                 color: $colorLightBlack;
+
+                @include desktop {
+                    margin: 0.5vw 1vw;
+                    @include widthHeightResponsive;
+                }
     
                 p {
-                    font-weight: 600;
                     font-size: 12px;
                     line-height: 18px;
+
+                    @include desktop {
+                        font-size: 1.1vw;
+                        line-height: normal;
+                        font-weight: normal;
+                        width: auto;
+                    }
                 }
             }
     
             .features-container__link {
+                width: 253px;
+                height: 18px;
+                margin: 0 auto;
                 font-weight: bold;
+
+                @include desktop {
+                    @include widthHeightResponsive;
+                }
+
     
                 a {
                     font-size: 12px;
@@ -84,6 +152,11 @@
                     text-decoration: none;
                     text-transform: capitalize;
                     color: $colorLinksRed;
+
+                    @include desktop {
+                        font-size: 1.1vw;
+                        line-height: normal;
+                    }
                 }
             }
         }
