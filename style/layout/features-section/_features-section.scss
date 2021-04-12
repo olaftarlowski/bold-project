@@ -30,6 +30,11 @@
         font-size: 36px;
         line-height: 43px;
         text-align: center;
+
+        @include mobile {
+            font-size: 12vw;
+            line-height: 120%;
+        }
        
     }
 }

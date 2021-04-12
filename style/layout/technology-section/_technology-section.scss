@@ -2,6 +2,11 @@
     height: 500px;
     background-color: $colorWhite;
 
+    @include mobile {
+        height: 100%;
+        padding-bottom: 48px;
+    }
+
     .technology-block {
         @include flexCenter(column);
 
@@ -13,6 +18,7 @@
 
             @include desktop {
                 width: 100%;
+                margin-top: 48px;
             }
 
             h2 {
@@ -21,12 +27,24 @@
                 line-height: 43px;
                 text-align: center;
 
+                @include mobile {
+                    font-size: 12vw;
+                    line-height: 120%;
+                }
+
             }
         }
 
         .technology-container {
             margin-top: 52px;
+            
             @include flexCenter(row);
+
+            @include mobile {
+                width: 100%;
+                margin-top: 8vw;
+                flex-direction: column;
+            }
 
             .technology-container__item {
                 width: 255px;
@@ -40,11 +58,16 @@
                     height: 194px;
                     margin: 0 8px;
                 }
-                
+
                 @include tablet {
                     width: 182px;
                     height: 160px;
                     margin: 0 4px;
+                }
+
+                @include mobile {
+                    width: 90%;
+                    height: 100%;
                 }
 
                 .technology-container__bg-number {
@@ -60,19 +83,32 @@
                         margin: 0 auto;
                     }
 
-                    span {
+                    @include mobile {
+                        @include widthHeightResponsive;
+                    }
 
+                    span {
                         font-weight: bold;
                         font-size: 100px;
                         line-height: 120px;
-
                         color: $colorTransparentGray;
+
+                        @include mobile {
+                            font-size: 78px;
+                            line-height: normal;
+
+                            @include widthHeightResponsive;
+                        }
                     }
                 }
 
                 .technology-container__text {
 
                     @include flexCenter(column);
+
+                    @include mobile {
+                        @include widthHeightResponsive;
+                    }
 
                     .technology-container__icon {
                         @include flexCenter(null);
@@ -82,12 +118,24 @@
                         width: 80px;
                         height: 80px;
                         margin: 59px 87px 0 87px;
+
+                        @include mobile {
+                            width: 70px;
+                            height: 70px;
+                            margin: 50px auto 0;
+                        }
                     }
 
                     #icon-02 {
                         width: 66px;
                         height: 66px;
                         margin: 65px 95px 8px 94px;
+
+                        @include mobile {
+                            width: 70px;
+                            height: 70px;
+                            margin: 50px auto 0;
+                        }
 
                         img {
                             width: 47.68px;
@@ -100,6 +148,12 @@
                         height: 70px;
                         margin: 61px 92px 8px 93px;
 
+                        @include mobile {
+                            width: 70px;
+                            height: 70px;
+                            margin: 50px auto 0;
+                        }
+
                         img {
                             width: 47.82px;
                             height: 54px;
@@ -110,6 +164,12 @@
                         width: 47px;
                         height: 54px;
                         margin: 71px 104px 14px 104px;
+
+                        @include mobile {
+                            width: 70px;
+                            height: 70px;
+                            margin: 50px auto 0;
+                        }
                     }
 
                     .technology-container__headline {
@@ -118,11 +178,18 @@
                         color: $colorLightBlack;
                         margin-bottom: 10px;
 
+                        @include widthHeightResponsive;
+
                         h3 {
                             font-weight: bold;
                             font-size: 18px;
                             line-height: 22px;
                             text-transform: capitalize;
+
+                            @include mobile {
+                                font-size: 8vw;
+                                line-height: 120%;
+                            }
                         }
                     }
 
@@ -131,10 +198,21 @@
                         height: 51px;
                         margin: 0 30px 4px 34px;
 
+                        @include widthHeightResponsive;
+
+                        @include mobile {
+                            margin: 8px;
+                        }
+
                         p {
                             font-size: 12px;
                             line-height: 14px;
                             font-weight: 400;
+
+                            @include mobile {
+                                font-size: 4vw;
+                                line-height: 120%;
+                            }
                         }
                     }
                 }

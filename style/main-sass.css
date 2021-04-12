@@ -276,6 +276,13 @@ input {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .features-block__headline h2 {
+    font-size: 12vw;
+    line-height: 120%;
+  }
+}
+
 .features-container {
   margin-top: 63px;
   display: -webkit-box;
@@ -485,6 +492,13 @@ input {
   background-color: #fff;
 }
 
+@media (max-width: 768px) {
+  .technology-section {
+    height: 100%;
+    padding-bottom: 48px;
+  }
+}
+
 .technology-section .technology-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -511,6 +525,7 @@ input {
 @media (max-width: 1280px) {
   .technology-section .technology-block .technology-block__headline {
     width: 100%;
+    margin-top: 48px;
   }
 }
 
@@ -519,6 +534,13 @@ input {
   font-size: 36px;
   line-height: 43px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-block__headline h2 {
+    font-size: 12vw;
+    line-height: 120%;
+  }
 }
 
 .technology-section .technology-block .technology-container {
@@ -536,6 +558,17 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container {
+    width: 100%;
+    margin-top: 8vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .technology-section .technology-block .technology-container .technology-container__item {
@@ -562,6 +595,13 @@ input {
   }
 }
 
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item {
+    width: 90%;
+    height: 100%;
+  }
+}
+
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__bg-number {
   position: absolute;
   top: 0;
@@ -578,11 +618,27 @@ input {
   }
 }
 
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item .technology-container__bg-number {
+    width: auto;
+    height: auto;
+  }
+}
+
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__bg-number span {
   font-weight: bold;
   font-size: 100px;
   line-height: 120px;
   color: rgba(16, 16, 16, 0.08);
+}
+
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item .technology-container__bg-number span {
+    font-size: 78px;
+    line-height: normal;
+    width: auto;
+    height: auto;
+  }
 }
 
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__text {
@@ -599,6 +655,13 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item .technology-container__text {
+    width: auto;
+    height: auto;
+  }
 }
 
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__text .technology-container__icon {
@@ -619,10 +682,26 @@ input {
   margin: 59px 87px 0 87px;
 }
 
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item .technology-container__text #icon-01 {
+    width: 70px;
+    height: 70px;
+    margin: 50px auto 0;
+  }
+}
+
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__text #icon-02 {
   width: 66px;
   height: 66px;
   margin: 65px 95px 8px 94px;
+}
+
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item .technology-container__text #icon-02 {
+    width: 70px;
+    height: 70px;
+    margin: 50px auto 0;
+  }
 }
 
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__text #icon-02 img {
@@ -636,6 +715,14 @@ input {
   margin: 61px 92px 8px 93px;
 }
 
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item .technology-container__text #icon-03 {
+    width: 70px;
+    height: 70px;
+    margin: 50px auto 0;
+  }
+}
+
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__text #icon-03 img {
   width: 47.82px;
   height: 54px;
@@ -647,11 +734,21 @@ input {
   margin: 71px 104px 14px 104px;
 }
 
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item .technology-container__text #icon-04 {
+    width: 70px;
+    height: 70px;
+    margin: 50px auto 0;
+  }
+}
+
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__text .technology-container__headline {
   width: 100%;
   height: 22px;
   color: #101010;
   margin-bottom: 10px;
+  width: auto;
+  height: auto;
 }
 
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__text .technology-container__headline h3 {
@@ -661,15 +758,37 @@ input {
   text-transform: capitalize;
 }
 
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item .technology-container__text .technology-container__headline h3 {
+    font-size: 8vw;
+    line-height: 120%;
+  }
+}
+
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__text .technology-container__parag {
   width: 191px;
   height: 51px;
   margin: 0 30px 4px 34px;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item .technology-container__text .technology-container__parag {
+    margin: 8px;
+  }
 }
 
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__text .technology-container__parag p {
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .technology-section .technology-block .technology-container .technology-container__item .technology-container__text .technology-container__parag p {
+    font-size: 4vw;
+    line-height: 120%;
+  }
 }
 /*# sourceMappingURL=main-sass.css.map */
