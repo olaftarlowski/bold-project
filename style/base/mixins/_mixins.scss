@@ -4,3 +4,12 @@
     justify-content: center;
     align-items: center;
 }
+
+$tablet: 1024px;
+$mobile: 768px;
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}

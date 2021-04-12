@@ -22,32 +22,52 @@
         right: 0;
         bottom: 0;
 
-        
         @include flexCenter(column);
 
         .hero-banner__headline {
-            width: 578px;
+            max-width: 578px;
             margin-top: 71px;
             margin-bottom: 39px;
 
+            @include tablet {
+                margin: 1vw 0;
+            }
+
             h1 {
-            font-weight: bold;
-            font-size: 72px;
-            line-height: 86px;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+                font-weight: bold;
+                font-size: 72px;
+                line-height: 86px;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+
+                @include tablet {
+                    font-size: 7vw;
+                    line-height: normal;
+                }
             }
         }
 
         .hero-banner__parag {
-            margin-bottom: 40px;
             max-width: 540px;
             height: 124px;
+            margin-bottom: 40px;
+            
 
-             p {
+            @include tablet {
+                max-width: 50%;
+                height: auto;
+                margin: 2vw 0 4vw 0;
+            }
+
+            p {
                 font-size: 24px;
                 line-height: 36px;
-             }
+
+                @include tablet {
+                    font-size: 2.3vw;
+                    line-height: 32px;
+                }
+            }
         }
 
         .hero-banner__button {
@@ -55,4 +75,3 @@
         }
     }
 }
-
