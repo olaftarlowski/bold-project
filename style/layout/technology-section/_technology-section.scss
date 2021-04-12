@@ -40,6 +40,12 @@
                     height: 194px;
                     margin: 0 8px;
                 }
+                
+                @include tablet {
+                    width: 182px;
+                    height: 160px;
+                    margin: 0 4px;
+                }
 
                 .technology-container__bg-number {
                     position: absolute;
@@ -135,5 +141,4 @@
             }
         }
     }
-
 }

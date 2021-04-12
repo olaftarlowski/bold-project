@@ -554,6 +554,14 @@ input {
   }
 }
 
+@media (max-width: 1024px) {
+  .technology-section .technology-block .technology-container .technology-container__item {
+    width: 182px;
+    height: 160px;
+    margin: 0 4px;
+  }
+}
+
 .technology-section .technology-block .technology-container .technology-container__item .technology-container__bg-number {
   position: absolute;
   top: 0;
