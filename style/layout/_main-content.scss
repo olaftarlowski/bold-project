@@ -6,7 +6,6 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
-    border: 1px solid black;
 }
 
 
@@ -14,3 +13,4 @@ body {
 @import '../base/base';
 @import '../components/buttons/buttons';
 @import './header/banner/hero-banner';
+@import './features-section/features-section';
