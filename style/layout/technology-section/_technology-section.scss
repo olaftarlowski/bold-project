@@ -11,6 +11,10 @@
             margin-top: 63px;
             color: $colorBlack;
 
+            @include desktop {
+                width: 100%;
+            }
+
             h2 {
                 font-weight: 600;
                 font-size: 36px;
@@ -31,6 +35,12 @@
                 text-align: center;
                 margin: 0 15px;
 
+                @include desktop {
+                    width: 224px;
+                    height: 194px;
+                    margin: 0 8px;
+                }
+
                 .technology-container__bg-number {
                     position: absolute;
                     top: 0;
@@ -39,6 +49,10 @@
                     width: 117px;
                     height: 120px;
                     margin: 0 69px;
+
+                    @include desktop {
+                        margin: 0 auto;
+                    }
 
                     span {
 
