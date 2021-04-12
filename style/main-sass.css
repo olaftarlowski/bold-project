@@ -108,7 +108,8 @@ input {
 }
 
 .hero-banner .hero-banner__content .hero-banner__headline {
-  margin-top: 72px;
+  width: 578px;
+  margin-top: 71px;
   margin-bottom: 39px;
 }
 
@@ -116,13 +117,13 @@ input {
   font-weight: bold;
   font-size: 72px;
   line-height: 86px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-banner .hero-banner__content .hero-banner__parag {
-  margin-bottom: 39px;
-  max-width: 35%;
+  margin-bottom: 40px;
+  max-width: 540px;
   height: 124px;
 }
 

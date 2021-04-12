@@ -21,25 +21,27 @@
         left: 0;
         right: 0;
         bottom: 0;
+
         
         @include flexCenter(column);
 
         .hero-banner__headline {
-            margin-top: 72px;
+            width: 578px;
+            margin-top: 71px;
             margin-bottom: 39px;
 
             h1 {
             font-weight: bold;
             font-size: 72px;
             line-height: 86px;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.06em;
             text-transform: uppercase;
             }
         }
 
         .hero-banner__parag {
-            margin-bottom: 39px;
-            max-width: 35%;
+            margin-bottom: 40px;
+            max-width: 540px;
             height: 124px;
 
              p {
