@@ -5,6 +5,10 @@
     @include desktop {
         height: 600px;
     }
+
+    @include tablet {
+        height: 540px;
+    }
 }
 
 .features-block {
@@ -56,6 +60,9 @@
             @include desktop {
                 width: 80%;
             }
+            @include tablet {
+                width: 90%;
+            }
         }
     
     
@@ -81,6 +88,12 @@
 
                 @include flexCenter(column);
             }
+
+            @include tablet {
+                top: calc(157px - 30%);
+                width: 70%;
+                height: 80%;
+            }
     
             .features-container__headline {
                 margin: 33px auto 0;
@@ -93,9 +106,8 @@
                 @include desktop {
                     margin: 0.5vw 1vw;
                     @include widthHeightResponsive;
-                    height: 40px;
+                    height: 25%;
                 }
-
     
                 h3 {
                     font-size: 18px;
@@ -105,6 +117,10 @@
                         font-size: 1.4vw;
                         line-height: 120%;
                         
+                    }
+
+                    @include tablet {
+                        font-size: 1.8vw;
                     }
                 }
             }
@@ -119,9 +135,10 @@
 
                 @include desktop {
                     margin: 0.5vw 1vw;
+                    height: 25%;
                     @include widthHeightResponsive;
                 }
-    
+                
                 p {
                     font-size: 12px;
                     line-height: 18px;
@@ -131,6 +148,10 @@
                         line-height: normal;
                         font-weight: normal;
                         width: auto;
+                    }
+
+                    @include tablet {
+                        font-size: 1.4vw;
                     }
                 }
             }
@@ -142,8 +163,10 @@
                 font-weight: bold;
 
                 @include desktop {
+                    margin-top: 1vw;
                     @include widthHeightResponsive;
                 }
+
 
     
                 a {
@@ -156,6 +179,10 @@
                     @include desktop {
                         font-size: 1.1vw;
                         line-height: normal;
+                    }
+
+                    @include tablet {
+                        font-size: 1.4vw;
                     }
                 }
             }

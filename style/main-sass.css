@@ -234,6 +234,12 @@ input {
   }
 }
 
+@media (max-width: 1024px) {
+  .features-section {
+    height: 540px;
+  }
+}
+
 .features-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,6 +321,12 @@ input {
   }
 }
 
+@media (max-width: 1024px) {
+  .features-container .features-container__item .features-bg-img {
+    width: 90%;
+  }
+}
+
 .features-container .features-container__item .features-container__text {
   position: absolute;
   top: 157px;
@@ -352,6 +364,14 @@ input {
   }
 }
 
+@media (max-width: 1024px) {
+  .features-container .features-container__item .features-container__text {
+    top: calc(157px - 30%);
+    width: 70%;
+    height: 80%;
+  }
+}
+
 .features-container .features-container__item .features-container__text .features-container__headline {
   margin: 33px auto 0;
   width: 229px;
@@ -365,7 +385,7 @@ input {
     margin: 0.5vw 1vw;
     width: auto;
     height: auto;
-    height: 40px;
+    height: 25%;
   }
 }
 
@@ -381,6 +401,12 @@ input {
   }
 }
 
+@media (max-width: 1024px) {
+  .features-container .features-container__item .features-container__text .features-container__headline h3 {
+    font-size: 1.8vw;
+  }
+}
+
 .features-container .features-container__item .features-container__text .features-container__parag {
   margin: 20px auto 5px;
   width: 229px;
@@ -392,6 +418,7 @@ input {
 @media (max-width: 1280px) {
   .features-container .features-container__item .features-container__text .features-container__parag {
     margin: 0.5vw 1vw;
+    height: 25%;
     width: auto;
     height: auto;
   }
@@ -411,6 +438,12 @@ input {
   }
 }
 
+@media (max-width: 1024px) {
+  .features-container .features-container__item .features-container__text .features-container__parag p {
+    font-size: 1.4vw;
+  }
+}
+
 .features-container .features-container__item .features-container__text .features-container__link {
   width: 253px;
   height: 18px;
@@ -420,6 +453,7 @@ input {
 
 @media (max-width: 1280px) {
   .features-container .features-container__item .features-container__text .features-container__link {
+    margin-top: 1vw;
     width: auto;
     height: auto;
   }
@@ -437,6 +471,12 @@ input {
   .features-container .features-container__item .features-container__text .features-container__link a {
     font-size: 1.1vw;
     line-height: normal;
+  }
+}
+
+@media (max-width: 1024px) {
+  .features-container .features-container__item .features-container__text .features-container__link a {
+    font-size: 1.4vw;
   }
 }
 /*# sourceMappingURL=main-sass.css.map */
