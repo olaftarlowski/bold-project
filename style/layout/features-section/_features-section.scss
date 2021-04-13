@@ -29,17 +29,12 @@
                 margin-top: 48px;
             }
 
-            @include mobile {}
-
             h2 {
-                font-weight: 600;
-                font-size: 36px;
-                line-height: 43px;
+                @include headline2desktop;
                 text-align: center;
 
                 @include mobile {
-                    font-size: 12vw;
-                    line-height: 120%;
+                    @include headline2mobile;
                 }
             }
         }
