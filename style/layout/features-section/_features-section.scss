@@ -9,189 +9,223 @@
     @include tablet {
         height: 540px;
     }
-}
 
-.features-block {
-    @include flexCenter(column);
-}
-
-.features-block__headline {
-    width: 1110px;
-    height: 55px; 
-    margin-top: 63px;
-    color: $colorBlack;
-
-    @include desktop {
-        width: 90%;
+    @include mobile {
+        height: 100%;
     }
 
-    h2 {
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 43px;
-        text-align: center;
+    .features-block {
+        @include flexCenter(column);
 
-        @include mobile {
-            font-size: 12vw;
-            line-height: 120%;
-        }
-       
-    }
-}
-
-.features-container {
-    
-    margin-top: 63px;
-    @include flexCenter(row);
-
-
-
-    .features-container__item {
-        position: relative;
-        margin: 0 15px;
-        max-width: 350px;
-
-        @include desktop {
-            display: flex;
-            margin: 0 8px;
-        }
-
-        .features-bg-img {
-            width: 100%;
-            height: auto;
-            max-width: 350px;
-            margin: 0 auto;
+        .features-block__headline {
+            width: 1110px;
+            height: 55px;
+            margin-top: 63px;
+            color: $colorBlack;
 
             @include desktop {
-                width: 80%;
-            }
-            @include tablet {
-                width: 90%;
-            }
-        }
-    
-    
-        .features-container__text {
-            position: absolute;
-            top: 157px;
-            left: 0;
-            text-align: center;
-            margin: 0 28px 0 29px;
-    
-            width: 293px;
-            height: 198px;
-            background-color: $colorWhite;
-            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-
-            @include desktop {
-                top: calc(157px - 15%);
-                right: 0;
-                width: 70%;
-                height: 75%;
-                margin: 0 auto;
-
-                @include flexCenter(column);
+                width: 100%;
+                height: auto;
+                margin-top: 48px;
             }
 
-            @include tablet {
-                top: calc(157px - 30%);
-                width: 70%;
-                height: 80%;
-            }
-    
-            .features-container__headline {
-                margin: 33px auto 0;
+            @include mobile {}
 
-                width: 229px;
-                height: 40px;
-                font-weight: bold;
-                color: $colorLightBlack;
-
-                @include desktop {
-                    margin: 0.5vw 1vw;
-                    @include widthHeightResponsive;
-                    height: 25%;
-                }
-    
-                h3 {
-                    font-size: 18px;
-                    line-height: 22px;
-
-                    @include desktop {
-                        font-size: 1.4vw;
-                        line-height: 120%;
-                        
-                    }
-
-                    @include tablet {
-                        font-size: 1.8vw;
-                    }
-                }
-            }
-    
-            .features-container__parag {
-                margin: 20px auto 5px;
-
-                width: 229px;
-                height: 57px;
+            h2 {
                 font-weight: 600;
-                color: $colorLightBlack;
+                font-size: 36px;
+                line-height: 43px;
+                text-align: center;
 
-                @include desktop {
-                    margin: 0.5vw 1vw;
-                    height: 25%;
-                    @include widthHeightResponsive;
-                }
-                
-                p {
-                    font-size: 12px;
-                    line-height: 18px;
-
-                    @include desktop {
-                        font-size: 1.1vw;
-                        line-height: normal;
-                        font-weight: normal;
-                        width: auto;
-                    }
-
-                    @include tablet {
-                        font-size: 1.4vw;
-                    }
+                @include mobile {
+                    font-size: 12vw;
+                    line-height: 120%;
                 }
             }
-    
-            .features-container__link {
-                width: 253px;
-                height: 18px;
-                margin: 0 auto;
-                font-weight: bold;
+        }
+
+        .features-container {
+
+            margin-top: 63px;
+            @include flexCenter(row);
+
+            @include mobile {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 8vw;
+            }
+
+            .features-container__item {
+                position: relative;
+                margin: 0 15px;
+                max-width: 350px;
 
                 @include desktop {
-                    margin-top: 1vw;
-                    @include widthHeightResponsive;
+                    display: flex;
+                    margin: 0 8px;
                 }
 
+                @include mobile {
+                    margin-bottom: 132px;
+                }
 
-    
-                a {
-                    font-size: 12px;
-                    line-height: 18px;
-                    text-decoration: none;
-                    text-transform: capitalize;
-                    color: $colorLinksRed;
+                .features-bg-img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 350px;
+                    margin: 0 auto;
 
                     @include desktop {
-                        font-size: 1.1vw;
-                        line-height: normal;
+                        width: 80%;
                     }
 
                     @include tablet {
-                        font-size: 1.4vw;
+                        width: 90%;
+                    }
+                }
+
+
+                .features-container__text {
+                    position: absolute;
+                    top: 157px;
+                    left: 0;
+                    margin: 0 28px 0 29px;
+                    width: 293px;
+                    height: 198px;
+                    background-color: $colorWhite;
+                    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+                    border-radius: 8px;
+                    text-align: center;
+
+                    @include desktop {
+                        top: 70%;
+                        right: 0;
+                        width: 70%;
+                        height: 75%;
+                        margin: 0 auto;
+
+                        @include flexCenter(column);
+                    }
+
+                    @include tablet {
+                        top: 70%;
+                        width: 70%;
+                        height: 80%;
+                    }
+
+                    @include mobile {
+                        top: 60%;
+                        width: 80%;
+                        min-height: 90%;
+                        height: auto;
+                    }
+
+                    .features-container__headline {
+                        margin: 33px auto 0;
+                        width: 229px;
+                        height: 40px;
+                        font-weight: bold;
+                        color: $colorLightBlack;
+
+                        @include desktop {
+                            @include widthHeightResponsive;
+                            margin: 0.5vw 1vw;
+                        }
+
+                        @include mobile {
+                            margin: 1vw;
+                        }
+
+                        h3 {
+                            font-size: 18px;
+                            line-height: 22px;
+
+                            @include desktop {
+                                font-size: 1.4vw;
+                                line-height: 120%;
+                            }
+
+                            @include tablet {
+                                font-size: 1.8vw;
+                            }
+
+                            @include mobile {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+
+                    .features-container__parag {
+                        margin: 20px auto 5px;
+                        width: 229px;
+                        height: 57px;
+                        font-weight: 600;
+                        color: $colorLightBlack;
+
+                        @include desktop {
+                            margin: 0.5vw 1vw;
+                            @include widthHeightResponsive;
+                        }
+
+                        @include mobile {
+                            margin: 1vw;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+
+                            @include desktop {
+                                font-size: 1.1vw;
+                                line-height: normal;
+                                font-weight: normal;
+                                width: auto;
+                            }
+
+                            @include tablet {
+                                font-size: 1.4vw;
+                            }
+
+                            @include mobile {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+
+                    .features-container__link {
+                        width: 253px;
+                        height: 18px;
+                        margin: 0 auto;
+                        font-weight: bold;
+
+                        @include desktop {
+                            margin: 1vw;
+                            @include widthHeightResponsive;
+                        }
+
+                        a {
+                            font-size: 12px;
+                            line-height: 18px;
+                            text-decoration: none;
+                            text-transform: capitalize;
+                            color: $colorLinksRed;
+
+                            @include desktop {
+                                font-size: 1.1vw;
+                                line-height: normal;
+                            }
+
+                            @include tablet {
+                                font-size: 1.4vw;
+                            }
+
+                            @include mobile {
+                                font-size: 0.8rem;
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
-
