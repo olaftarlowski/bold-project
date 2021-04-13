@@ -16,5 +16,6 @@
     &:hover {
         color: $colorBg;
         background-color: $colorText;
+        border: 1px solid $colorRed;
     }
 }

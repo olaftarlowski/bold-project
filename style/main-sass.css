@@ -221,6 +221,7 @@ input {
 .hero-banner .hero-banner__content .hero-banner__button:hover {
   color: #fff;
   background-color: #D52047;
+  border: 1px solid #D52047;
 }
 
 .features-section {
@@ -1183,5 +1184,181 @@ input {
   .apps-section .apps-container .apps-block .apps-block__content-right .apps-block__item-bg-2 {
     right: -4%;
   }
+}
+
+.contact-section {
+  height: 500px;
+  background-color: #fff;
+}
+
+.contact-section .contact-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-section .contact-container .contact-block {
+  width: 50%;
+  height: 100%;
+  color: #000;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-left {
+  margin: 117px 0 0 176px;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-left .contact-block__headline {
+  width: 80%;
+  margin-bottom: 53px;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-left .contact-block__headline h2 {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 600;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-left .contact-block__parag {
+  width: 80%;
+  text-align: justify;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-left .contact-block__parag p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.007em;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right {
+  margin: 117px 0 0 15px;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=text],
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=number],
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container select {
+  padding: 21px 40px 20px 31px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  margin: 0 30px 24px 0;
+  height: 60px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  color: #000;
+  text-transform: capitalize;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-right: 0;
+  cursor: pointer;
+  color: rgba(19, 39, 67, 0.5);
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=number] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=text]::-webkit-input-placeholder {
+  color: rgba(19, 39, 67, 0.5);
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=text]:-ms-input-placeholder {
+  color: rgba(19, 39, 67, 0.5);
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=text]::-ms-input-placeholder {
+  color: rgba(19, 39, 67, 0.5);
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=text]::placeholder {
+  color: rgba(19, 39, 67, 0.5);
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=submit] {
+  width: 160px;
+  height: 50px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  color: #fff;
+  background-color: #ED4C5C;
+  font-weight: normal;
+  margin-top: 3px;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=submit]:hover {
+  color: #ED4C5C;
+  background-color: #fff;
+  border: 1px solid #D52047;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container #fname {
+  width: 255px;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container #lname {
+  width: 255px;
+  margin-left: -3px;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container #phonenumber,
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container #service {
+  width: 540px;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input::-webkit-outer-spin-button,
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container .custom-select {
+  position: relative;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.contact-section .contact-container .contact-block .contact-block__content-right .form-container .custom-select .custom-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  margin: 23px;
+  background: url("../assets/svgs/ChevronDown(E70D).svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
 }
 /*# sourceMappingURL=main-sass.css.map */

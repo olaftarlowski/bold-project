@@ -1,0 +1,128 @@
+.contact-section {
+    height: 500px;
+    background-color: $colorWhite;
+
+    .contact-container {
+        width: 100%;
+        height: 100%;
+        @include flexCenter(row);
+
+        .contact-block {
+            width: 50%;
+            height: 100%;
+            color: $colorBlack;
+
+            .contact-block__content-left {
+                margin: 117px 0 0 176px;
+
+
+                .contact-block__headline {
+                    width: 80%;
+                    margin-bottom: 53px;
+
+                    h2 {
+                        @include headline2desktop;
+                    }
+                }
+
+                .contact-block__parag {
+                    width: 80%;
+                    text-align: justify;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.007em;
+                    }
+                }
+            }
+
+            .contact-block__content-right {
+                margin: 117px 0 0 15px;
+
+                .form-container {
+
+                    input[type=text],
+                    input[type=number],
+                    select {
+                        padding: 21px 40px 20px 31px;
+                        border: 1px solid #333;
+                        border-radius: 6px;
+                        margin: 0 30px 24px 0;
+                        height: 60px;
+                        font-size: 16px;
+                        line-height: 19px;
+                        font-weight: normal;
+                        color: $colorBlack;
+                        text-transform: capitalize;
+                        box-sizing: border-box;
+                    }
+                
+                    select {
+                        appearance: none;
+                        margin-right: 0;
+                        cursor: pointer;
+                        color: $colorInputPlaceholder;
+                    }
+                
+                    input[type=number] {
+                        appearance: none;
+                    }
+                
+                    input[type=text]::placeholder {
+                        color: $colorInputPlaceholder;
+                    }
+                
+                    input[type=submit] {
+                        @include button($colorWhite, $colorLinksRed);
+                        font-weight: normal;
+                        margin-top: 3px;
+                    }
+                
+                    #fname {
+                        width: 255px;
+                    }
+                    #lname {
+                        width: 255px;
+                        margin-left: -3px;
+                    }
+                
+                    #phonenumber,
+                    #service {
+                        width: 540px;
+                    }
+                
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                
+                    input[type=number] {
+                        -moz-appearance: textfield;
+                    }
+
+                    .custom-select {
+                        position: relative;
+                        width: min-content;
+                
+                        .custom-arrow {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 14px;
+                            height: 14px;
+                            margin: 23px;
+                            background: url('../assets/svgs/ChevronDown(E70D).svg');
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
