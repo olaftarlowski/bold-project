@@ -1209,19 +1209,55 @@ input {
           align-items: center;
 }
 
+@media (max-width: 1280px) {
+  .contact-section .contact-container .contact-block-left {
+    padding: 8vw;
+  }
+}
+
 .contact-section .contact-container .contact-block {
   width: 50%;
   height: 100%;
   color: #000;
 }
 
+@media (max-width: 1280px) {
+  .contact-section .contact-container .contact-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+}
+
 .contact-section .contact-container .contact-block .contact-block__content-left {
   margin: 117px 0 0 176px;
+}
+
+@media (max-width: 1280px) {
+  .contact-section .contact-container .contact-block .contact-block__content-left {
+    margin: 0;
+  }
 }
 
 .contact-section .contact-container .contact-block .contact-block__content-left .contact-block__headline {
   width: 80%;
   margin-bottom: 53px;
+}
+
+@media (max-width: 1280px) {
+  .contact-section .contact-container .contact-block .contact-block__content-left .contact-block__headline {
+    width: auto;
+    height: auto;
+  }
 }
 
 .contact-section .contact-container .contact-block .contact-block__content-left .contact-block__headline h2 {
@@ -1235,6 +1271,13 @@ input {
   text-align: justify;
 }
 
+@media (max-width: 1280px) {
+  .contact-section .contact-container .contact-block .contact-block__content-left .contact-block__parag {
+    width: auto;
+    height: auto;
+  }
+}
+
 .contact-section .contact-container .contact-block .contact-block__content-left .contact-block__parag p {
   font-size: 14px;
   line-height: 20px;
@@ -1243,6 +1286,21 @@ input {
 
 .contact-section .contact-container .contact-block .contact-block__content-right {
   margin: 117px 0 0 15px;
+}
+
+@media (max-width: 1280px) {
+  .contact-section .contact-container .contact-block .contact-block__content-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
 }
 
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=text],
@@ -1260,6 +1318,14 @@ input {
   text-transform: capitalize;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 1280px) {
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=text],
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=number],
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container select {
+    margin-right: 26px;
+  }
 }
 
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container select {
@@ -1324,6 +1390,12 @@ input {
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container #lname {
   width: 255px;
   margin-left: -3px;
+}
+
+@media (max-width: 1280px) {
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container #lname {
+    margin-left: 0;
+  }
 }
 
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container #phonenumber,
