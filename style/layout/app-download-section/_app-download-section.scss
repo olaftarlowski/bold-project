@@ -11,14 +11,28 @@
             width: 50%;
             height: 100%;
             color: $colorWhite;
+            
+
+            @include desktop {
+                padding: 8vw;
+                    @include flexCenter(null);
+            }
 
             .apps-block__content-left {
                 margin: 122px 0 0 165px;
 
+                @include desktop {
+                    margin: 0;
+                }
+
                 .apps-block__headline {
-                    width: 445px;
+                    width: 80%;
                     height: 107px;
                     margin-bottom: 24px;
+
+                    @include desktop {
+                        @include widthHeightResponsive;
+                    }
     
                     h2 {
                         font-size: 36px;
@@ -28,9 +42,13 @@
                 }
     
                 .apps-block__parag {
-                    width: 445px;
+                    width: 80%;
                     height: 64px;
                     margin-bottom: 40px;
+
+                    @include desktop {
+                        @include widthHeightResponsive;
+                    }
                     
                     p {
                         font-size: 14px;
@@ -70,12 +88,25 @@
             .apps-block__content-right {
                 margin: 94px 0 0 15px;
 
+                @include desktop {
+                    @include flexCenter(null);
+                    margin: 0;
+                }
+
                 .apps-block__item {
                     position: relative;
+                    max-width: 445px;
+
+                    @include desktop {
+                        @include flexCenter(null);
+                    }
 
                     img {
                         position: relative;
                         z-index: 100;
+                        max-width: 445px;
+                        width: 100%;
+                        height: auto;
                     }
                 }
 
@@ -87,16 +118,30 @@
                     opacity: 1;
                     background-position: center;
                     background-repeat: no-repeat;
-                    background-size: cover;
+                    background-size: contain;
+
+                    @include desktop {
+                        top: 7%;
+                        width: 80%;
+                        height: 80%;
+                    }
                 }
 
                 .apps-block__item-bg-1 {
                     background-image: url('../assets/techs-img-2.png');
                     left: -44px;
+
+                    @include desktop {
+                        left: -10%;
+                    }
                 }
                 .apps-block__item-bg-2 {
                     background-image: url('../assets/techs-img-3.png');
-                    left: 106px;
+                    right: -44px;
+
+                    @include desktop {
+                        right: -10%;
+                    }
                 }
             }
         }
