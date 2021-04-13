@@ -2,15 +2,27 @@
     height: 500px;
     background-color: $colorLinksRed;
 
+    @include mobile {
+        @include widthHeightResponsive;
+    }
+
     .apps-container {
         width: 100%;
         height: 100%;
         @include flexCenter(row);
 
+        @include mobile {
+            flex-direction: column;
+        }
+
         .apps-block {
             width: 50%;
             height: 100%;
             color: $colorWhite;
+
+            @include mobile {
+                width: 100%;
+            }
             
 
             @include desktop {
@@ -33,9 +45,17 @@
                     @include desktop {
                         @include widthHeightResponsive;
                     }
+                    @include mobile {
+                        margin-bottom: 4vw;
+                    }
     
                     h2 {
                         @include headline2desktop;
+
+                        @include mobile {
+                            @include headline2mobile;
+                            text-align: center;
+                        }
                     }
                 }
     
@@ -47,12 +67,20 @@
                     @include desktop {
                         @include widthHeightResponsive;
                     }
+                    @include mobile {
+                        margin-bottom: 4vw;
+                    }
                     
                     p {
                         font-size: 14px;
                         line-height: 20px;
                         letter-spacing: 0.007em;
                         text-align: justify;
+
+                        @include mobile {
+                            font-size: 5vw;
+                            line-height: 120%;
+                        }
                     }
                 }
     
@@ -60,25 +88,57 @@
                     width: 148px;
                     height: 32px;
 
+                    @include mobile {
+                        @include widthHeightResponsive;
+                        
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-around;
+                    }
+
                     .apps-block__link {
                         display: inline-block;
                         width: 32px;
                         height: 32px;
+
+                        @include mobile {
+                            @include widthHeightResponsive;
+                        }
+
+                        img {
+                            @include mobile {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
                     }
 
                     #apps__windows-logo {
                         img {
                             margin: 4px 0;
+
+                            @include mobile {
+                                margin: 0;
+                            }
                         }
                     }
 
                     #apps__google-logo {
                         margin-right: 20px;
                         margin-left: -2px;
+
+                        @include mobile {
+                            margin: 0;
+                        }
                     }
 
                     #apps__appst-logo {
                         margin-right: 20px;
+
+                        @include mobile {
+                            margin: 0;
+                        }
                     }
                 }
             }
@@ -105,6 +165,11 @@
                         max-width: 445px;
                         width: 100%;
                         height: auto;
+
+                        @include mobile {
+                            width: 90%;
+                            height: 90%;
+                        }
                     }
                 }
 
@@ -123,6 +188,11 @@
                         width: 80%;
                         height: 80%;
                     }
+
+                    @include mobile {
+                        width: 90%;
+                        height: 80%;
+                    }
                 }
 
                 .apps-block__item-bg-1 {
@@ -132,6 +202,9 @@
                     @include desktop {
                         left: -10%;
                     }
+                    @include mobile {
+                        left: -4%;
+                    }
                 }
                 .apps-block__item-bg-2 {
                     background-image: url('../assets/techs-img-3.png');
@@ -139,6 +212,9 @@
 
                     @include desktop {
                         right: -10%;
+                    }
+                    @include mobile {
+                        right: -4%;
                     }
                 }
             }
