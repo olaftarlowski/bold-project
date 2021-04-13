@@ -1385,6 +1385,12 @@ input {
   }
 }
 
+@media (max-width: 1024px) {
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container #fname {
+    width: 160px;
+  }
+}
+
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container #lname {
   width: 255px;
   margin-left: -3px;
@@ -1397,6 +1403,12 @@ input {
   }
 }
 
+@media (max-width: 1024px) {
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container #lname {
+    width: 160px;
+  }
+}
+
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container #phonenumber,
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container #service {
   width: 540px;
@@ -1406,6 +1418,13 @@ input {
   .contact-section .contact-container .contact-block .contact-block__content-right .form-container #phonenumber,
   .contact-section .contact-container .contact-block .contact-block__content-right .form-container #service {
     width: 420px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container #phonenumber,
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container #service {
+    width: 340px;
   }
 }
 
