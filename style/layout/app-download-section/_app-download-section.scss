@@ -32,7 +32,6 @@
                     height: 64px;
                     margin-bottom: 40px;
                     
-    
                     p {
                         font-size: 14px;
                         line-height: 20px;
@@ -52,11 +51,9 @@
                     }
 
                     #apps__windows-logo {
-                        
                         img {
                             margin: 4px 0;
                         }
-                        
                     }
 
                     #apps__google-logo {
@@ -67,6 +64,39 @@
                     #apps__appst-logo {
                         margin-right: 20px;
                     }
+                }
+            }
+
+            .apps-block__content-right {
+                margin: 94px 0 0 15px;
+
+                .apps-block__item {
+                    position: relative;
+
+                    img {
+                        position: relative;
+                        z-index: 100;
+                    }
+                }
+
+                .apps-block__item-bg {
+                    position: absolute;
+                    top: 22px;
+                    width: 383px;
+                    height: 267px;
+                    opacity: 1;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .apps-block__item-bg-1 {
+                    background-image: url('../assets/techs-img-2.png');
+                    left: -44px;
+                }
+                .apps-block__item-bg-2 {
+                    background-image: url('../assets/techs-img-3.png');
+                    left: 106px;
                 }
             }
         }

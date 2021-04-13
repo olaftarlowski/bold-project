@@ -936,4 +936,38 @@ input {
 .apps-section .apps-container .apps-block .apps-block__content-left .apps-block__links #apps__appst-logo {
   margin-right: 20px;
 }
+
+.apps-section .apps-container .apps-block .apps-block__content-right {
+  margin: 94px 0 0 15px;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-right .apps-block__item {
+  position: relative;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-right .apps-block__item img {
+  position: relative;
+  z-index: 100;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-right .apps-block__item-bg {
+  position: absolute;
+  top: 22px;
+  width: 383px;
+  height: 267px;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-right .apps-block__item-bg-1 {
+  background-image: url("../assets/techs-img-2.png");
+  left: -44px;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-right .apps-block__item-bg-2 {
+  background-image: url("../assets/techs-img-3.png");
+  left: 106px;
+}
 /*# sourceMappingURL=main-sass.css.map */
