@@ -1235,6 +1235,7 @@ input {
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
+    padding-top: 8vw;
   }
 }
 
@@ -1290,15 +1291,6 @@ input {
 
 @media (max-width: 1280px) {
   .contact-section .contact-container .contact-block .contact-block__content-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin: 0;
   }
 }
@@ -1324,7 +1316,7 @@ input {
   .contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=text],
   .contact-section .contact-container .contact-block .contact-block__content-right .form-container input[type=number],
   .contact-section .contact-container .contact-block .contact-block__content-right .form-container select {
-    margin-right: 26px;
+    margin-right: 17px;
   }
 }
 
@@ -1387,6 +1379,12 @@ input {
   width: 255px;
 }
 
+@media (max-width: 1280px) {
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container #fname {
+    width: 200px;
+  }
+}
+
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container #lname {
   width: 255px;
   margin-left: -3px;
@@ -1395,12 +1393,20 @@ input {
 @media (max-width: 1280px) {
   .contact-section .contact-container .contact-block .contact-block__content-right .form-container #lname {
     margin-left: 0;
+    width: 200px;
   }
 }
 
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container #phonenumber,
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container #service {
   width: 540px;
+}
+
+@media (max-width: 1280px) {
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container #phonenumber,
+  .contact-section .contact-container .contact-block .contact-block__content-right .form-container #service {
+    width: 420px;
+  }
 }
 
 .contact-section .contact-container .contact-block .contact-block__content-right .form-container input::-webkit-outer-spin-button,

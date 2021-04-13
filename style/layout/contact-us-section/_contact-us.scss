@@ -21,6 +21,7 @@
             @include desktop {
                 @include flexCenter(null);
                 align-items: unset;
+                padding-top: 8vw;
             }
 
             .contact-block__content-left {
@@ -64,7 +65,6 @@
                 margin: 117px 0 0 15px;
 
                 @include desktop {
-                    @include flexCenter(null);
                     margin: 0;
                 }
 
@@ -86,7 +86,7 @@
                         box-sizing: border-box;
 
                         @include desktop {
-                            margin-right: 26px;
+                            margin-right: 17px;
                         }
                     }
                 
@@ -113,6 +113,10 @@
                 
                     #fname {
                         width: 255px;
+
+                        @include desktop {
+                            width: 200px;
+                        }
                     }
                     #lname {
                         width: 255px;
@@ -120,12 +124,17 @@
 
                         @include desktop {
                             margin-left: 0;
+                            width: 200px;
                         }
                     }
                 
                     #phonenumber,
                     #service {
                         width: 540px;
+
+                        @include desktop {
+                            width: 420px;
+                        }
                     }
                 
                     input::-webkit-outer-spin-button,
