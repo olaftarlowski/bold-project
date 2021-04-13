@@ -1,0 +1,74 @@
+.apps-section {
+    height: 500px;
+    background-color: $colorLinksRed;
+
+    .apps-container {
+        width: 100%;
+        height: 100%;
+        @include flexCenter(row);
+
+        .apps-block {
+            width: 50%;
+            height: 100%;
+            color: $colorWhite;
+
+            .apps-block__content-left {
+                margin: 122px 0 0 165px;
+
+                .apps-block__headline {
+                    width: 445px;
+                    height: 107px;
+                    margin-bottom: 24px;
+    
+                    h2 {
+                        font-size: 36px;
+                        line-height: 43px;
+                        font-weight: 600;
+                    }
+                }
+    
+                .apps-block__parag {
+                    width: 445px;
+                    height: 64px;
+                    margin-bottom: 40px;
+                    
+    
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.007em;
+                        text-align: justify;
+                    }
+                }
+    
+                .apps-block__links {
+                    width: 148px;
+                    height: 32px;
+
+                    .apps-block__link {
+                        display: inline-block;
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                    #apps__windows-logo {
+                        
+                        img {
+                            margin: 4px 0;
+                        }
+                        
+                    }
+
+                    #apps__google-logo {
+                        margin-right: 20px;
+                        margin-left: -2px;
+                    }
+
+                    #apps__appst-logo {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

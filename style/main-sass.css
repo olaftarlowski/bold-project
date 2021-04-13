@@ -854,4 +854,86 @@ input {
     line-height: 120%;
   }
 }
+
+.apps-section {
+  height: 500px;
+  background-color: #ED4C5C;
+}
+
+.apps-section .apps-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.apps-section .apps-container .apps-block {
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-left {
+  margin: 122px 0 0 165px;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-left .apps-block__headline {
+  width: 445px;
+  height: 107px;
+  margin-bottom: 24px;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-left .apps-block__headline h2 {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 600;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-left .apps-block__parag {
+  width: 445px;
+  height: 64px;
+  margin-bottom: 40px;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-left .apps-block__parag p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.007em;
+  text-align: justify;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-left .apps-block__links {
+  width: 148px;
+  height: 32px;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-left .apps-block__links .apps-block__link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-left .apps-block__links #apps__windows-logo img {
+  margin: 4px 0;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-left .apps-block__links #apps__google-logo {
+  margin-right: 20px;
+  margin-left: -2px;
+}
+
+.apps-section .apps-container .apps-block .apps-block__content-left .apps-block__links #apps__appst-logo {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=main-sass.css.map */
