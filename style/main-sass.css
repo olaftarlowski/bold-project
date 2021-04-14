@@ -1,7 +1,3 @@
-body {
-  background-color: aqua;
-}
-
 .full-content {
   max-width: 1440px;
   margin: 0 auto;
@@ -241,7 +237,8 @@ input {
 @media (max-width: 768px) {
   .header-main .navbar {
     height: auto;
-    background: #EE3D1B;
+    background: -webkit-gradient(linear, left top, right top, color-stop(60%, #d52047), to(#ee3d1b));
+    background: linear-gradient(90deg, #d52047 60%, #ee3d1b 100%);
   }
 }
 
@@ -261,6 +258,8 @@ input {
           justify-content: space-between;
   width: 100%;
   text-transform: uppercase;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .header-main .navbar .navbar-container .nav-active {
@@ -347,10 +346,11 @@ input {
     display: none;
     position: absolute;
     right: 0;
-    top: 61px;
-    background: #EE3D1B;
+    top: 46px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(40%, #d52047), to(#ee3d1b));
+    background: linear-gradient(90deg, #d52047 40%, #ee3d1b 100%);
     width: 60%;
-    height: calc(50vh - 61px);
+    height: calc(50vh - 46px);
     -webkit-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
   }
@@ -463,8 +463,17 @@ input {
   margin: 2px;
 }
 
+.header-main .navbar .navbar-container-margin {
+  margin-top: 4px;
+  padding-bottom: 2px;
+}
+
 .header-main .fixed {
   position: fixed !important;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #d52047), to(#ee3d1b));
+  background: linear-gradient(90deg, #d52047 60%, #ee3d1b 100%);
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .features-section {

@@ -11,7 +11,8 @@
 
         @include mobile {
             height: auto;
-            background: $colorOrange;
+            background: linear-gradient(90deg, rgba(213, 32, 71, 1) 60%, rgba(238, 61, 27, 1) 100%);
+
         }
 
         .navbar-container {
@@ -23,6 +24,7 @@
             justify-content: space-between;
             width: 100%;
             text-transform: uppercase;
+            transition: 0.3s ease-in;
             
             .nav-active {
                 display: flex !important;
@@ -76,10 +78,10 @@
                     display: none;
                     position: absolute;
                     right: 0;
-                    top: 61px;
-                    background: $colorOrange;
+                    top: 46px;
+                    background: linear-gradient(90deg, rgba(213, 32, 71, 1) 40%, rgba(238, 61, 27, 1) 100%);
                     width: 60%;
-                    height: calc(50vh - 61px);
+                    height: calc(50vh - 46px);
                     transition: 0.5s ease-in;
                 }
 
@@ -145,10 +147,16 @@
                 margin: 2px;
             }
         }
+        .navbar-container-margin {
+            margin-top: 4px;
+            padding-bottom: 2px;
+        }
     }
 
     .fixed {
         position: fixed !important;
-
+        background: linear-gradient(90deg, rgba(213, 32, 71, 1) 60%, rgba(238, 61, 27, 1) 100%);
+        max-width: 1440px;
+        margin: 0 auto;
     }
 }
