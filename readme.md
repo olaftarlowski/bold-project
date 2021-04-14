@@ -4,7 +4,7 @@ Project based on a file from figma.com
 
 ##technologies
 
-HTML5, CSS3, SASS, JS
+HTML5, CSS3, SASS, JS, JQuery
 
 ###resolutions
 
