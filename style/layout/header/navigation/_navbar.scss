@@ -17,6 +17,11 @@
             width: 100%;
             text-transform: uppercase;
 
+            @include tablet {
+                margin-top: 32px;
+                padding: 0 36px;
+            }
+
             .navbar-logo {
                 display: flex;
                 flex-direction: row;
@@ -55,10 +60,12 @@
                 .navbar-links__list {
                     @include flexCenter(row);
                     justify-content: space-between;
-
                     width: 445px;
-                height: 22px;
-                    
+                    height: 22px;
+
+                    @include tablet {
+                        width: 424px;
+                    }
 
                     .navbar-links__list-item {
                         margin-right: 4px;
