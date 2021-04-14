@@ -2,10 +2,18 @@
     height: 500px;
     background-color: $colorWhite;
 
+    @include mobile {
+        @include widthHeightResponsive;
+    }
+
     .contact-container {
         width: 100%;
         height: 100%;
         @include flexCenter(row);
+
+        @include mobile {
+            flex-direction: column;
+        }
 
         .contact-block-left {
             @include desktop {
@@ -19,9 +27,13 @@
             color: $colorBlack;
 
             @include desktop {
-                @include flexCenter(null);
                 align-items: unset;
                 padding-top: 8vw;
+            }
+
+            @include mobile {
+                width: 100%;
+                padding: 8vw;
             }
 
             .contact-block__content-left {
@@ -42,6 +54,11 @@
 
                     h2 {
                         @include headline2desktop;
+
+                        @include mobile {
+                            @include headline2mobile;
+                            text-align: center;
+                        }
                     }
                 }
 
@@ -57,6 +74,11 @@
                         font-size: 14px;
                         line-height: 20px;
                         letter-spacing: 0.007em;
+
+                        @include mobile {
+                            font-size: 5vw;
+                            line-height: 120%;
+                        }
                     }
                 }
             }
@@ -70,111 +92,138 @@
 
                 .form-container {
 
-                    input[type=text],
-                    input[type=number],
-                    select {
-                        padding: 21px 40px 20px 31px;
-                        border: 1px solid #333;
-                        border-radius: 6px;
-                        margin: 0 30px 24px 0;
-                        height: 60px;
-                        font-size: 16px;
-                        line-height: 19px;
-                        font-weight: normal;
-                        color: $colorBlack;
-                        text-transform: capitalize;
-                        box-sizing: border-box;
-
-                        @include desktop {
-                            margin-right: 17px;
-                        }
-                    }
-                
-                    select {
-                        appearance: none;
-                        margin-right: 0;
-                        cursor: pointer;
-                        color: $colorInputPlaceholder;
-                    }
-                
-                    input[type=number] {
-                        appearance: none;
-                    }
-                
-                    input[type=text]::placeholder {
-                        color: $colorInputPlaceholder;
-                    }
-                
-                    input[type=submit] {
-                        @include button($colorWhite, $colorLinksRed);
-                        font-weight: normal;
-                        margin-top: 3px;
-                    }
-                
-                    #fname {
-                        width: 255px;
-
-                        @include desktop {
-                            width: 200px;
+                    form {
+                        @include mobile {
+                            @include flexCenter(column);
                         }
 
-                        @include tablet {
-                            width: 160px;
-                        }
-                    }
-                    #lname {
-                        width: 255px;
-                        margin-left: -3px;
+                        input[type=text],
+                        input[type=number],
+                        select {
+                            padding: 21px 40px 20px 31px;
+                            border: 1px solid #333;
+                            border-radius: 6px;
+                            margin: 0 30px 24px 0;
+                            height: 60px;
+                            font-size: 16px;
+                            line-height: 19px;
+                            font-weight: normal;
+                            color: $colorBlack;
+                            text-transform: capitalize;
+                            box-sizing: border-box;
 
-                        @include desktop {
-                            margin-left: 0;
-                            width: 200px;
+                            @include desktop {
+                                margin-right: 17px;
+                            }
+
+                            @include mobile {
+                                margin-right: 0;
+                                font-size: 1.1rem;
+                                line-height: 120%;
+                                padding: 0 0 0 20px;
+                            }
+
                         }
 
-                        @include tablet {
-                            width: 160px;
-                        }
-                    }
-                
-                    #phonenumber,
-                    #service {
-                        width: 540px;
-
-                        @include desktop {
-                            width: 420px;
+                        select {
+                            appearance: none;
+                            margin-right: 0;
+                            cursor: pointer;
+                            color: $colorInputPlaceholder;
                         }
 
-                        @include tablet {
-                            width: 340px;
+                        input[type=number] {
+                            appearance: none;
                         }
-                    }
-                
-                    input::-webkit-outer-spin-button,
-                    input::-webkit-inner-spin-button {
-                        -webkit-appearance: none;
-                        margin: 0;
-                    }
-                
-                    input[type=number] {
-                        -moz-appearance: textfield;
-                    }
 
-                    .custom-select {
-                        position: relative;
-                        width: min-content;
-                
-                        .custom-arrow {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            width: 14px;
-                            height: 14px;
-                            margin: 23px;
-                            background: url('../assets/svgs/ChevronDown(E70D).svg');
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            pointer-events: none;
+                        input[type=text]::placeholder, input[type=number]::placeholder {
+                            color: $colorInputPlaceholder;
+                        }
+
+                        input[type=submit] {
+                            @include button($colorWhite, $colorLinksRed);
+                            font-weight: normal;
+                            margin-top: 3px;
+                        }
+
+                        #fname, #lname {
+                            width: 255px;
+
+                            @include desktop {
+                                width: 200px;
+                            }
+
+                            @include tablet {
+                                width: 160px;
+                            }
+
+                            @include mobile {
+                                width: 100%;
+                            }
+                        }
+
+                        #lname {
+                            margin-left: -3px;
+
+                            @include desktop {
+                                margin-left: 0;
+                            }
+                        }
+
+                        #phonenumber,
+                        #service {
+                            width: 540px;
+
+                            @include desktop {
+                                width: 420px;
+                            }
+
+                            @include tablet {
+                                width: 340px;
+                            }
+
+                            @include mobile {
+                                width: 100%;
+                            }
+                        }
+
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+
+                        input[type=number] {
+                            -moz-appearance: textfield;
+                        }
+
+                        .custom-select {
+                            position: relative;
+                            width: min-content;
+
+                            @include mobile {
+                                width: 100%;
+                            }
+
+                            .custom-arrow {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 14px;
+                                height: 14px;
+                                margin: 23px;
+                                background: url('../assets/svgs/ChevronDown(E70D).svg');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                pointer-events: none;
+
+                                @include mobile {
+                                    width: 24px;
+                                    height: 24px;
+                                    margin: 18px;
+                                }
+                            }
                         }
                     }
                 }
@@ -182,4 +231,3 @@
         }
     }
 }
-
