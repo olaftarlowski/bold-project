@@ -100,7 +100,7 @@
                         input[type=text],
                         input[type=number],
                         select {
-                            padding: 21px 40px 20px 31px;
+                            padding: 20px 40px 20px 30px;
                             border: 1px solid #333;
                             border-radius: 6px;
                             margin: 0 30px 24px 0;
@@ -143,11 +143,11 @@
                         input[type=submit] {
                             @include button($colorWhite, $colorLinksRed);
                             font-weight: normal;
-                            margin-top: 3px;
                         }
 
-                        #fname, #lname {
+                        .form-element__short {
                             width: 255px;
+                            float: left;
 
                             @include desktop {
                                 width: 200px;
@@ -162,16 +162,7 @@
                             }
                         }
 
-                        #lname {
-                            margin-left: -3px;
-
-                            @include desktop {
-                                margin-left: 0;
-                            }
-                        }
-
-                        #phonenumber,
-                        #service {
+                        .form-element__long {
                             width: 540px;
 
                             @include desktop {

@@ -6,20 +6,28 @@ window.addEventListener("scroll", () => {
     navbarContainer.classList.toggle("navbar-container-margin", window.scrollY > 80);
 })
 
-//close menu
-const menuLink = $(".navbar-links");
-const burger = $(".burger-menu");
+ // burger
+ const burgerMenu = document.querySelector(".burger-menu");
+ const menuLink = document.querySelector(".navbar-links");
+ const menuLinkItems = document.querySelectorAll(".navbar-links__list-item");
 
-$(burger).on("click", () => {
-    menuLink.toggleClass('nav-active');
-    burger.toggleClass('toggle');
-})
+ burgerMenu.addEventListener("click", () => {
+     burgerMenu.classList.toggle("open");
+     menuLink.classList.toggle("nav-active");
+ });
 
-$('.navbar-links ul li a').on("click", function (e) {
-    menuLink.click().removeClass("nav-active");
-    burger.removeClass('toggle');
-});
+ for (let i = 0; i < menuLinkItems.length; i++ ) {
+    menuLinkItems[i].addEventListener("click", () => {
+        burgerMenu.classList.remove("open");
+        menuLink.classList.remove("nav-active");
+    });
+ }
 
+ // prevent submit reload for now
+ const submitBtn = document.getElementById("submit-btn");
+ submitBtn.addEventListener("click", (e) => {
+     e.preventDefault();
+ });
 
 // scroll event
 $('a[href*="#"]')
@@ -50,3 +58,6 @@ $('a[href*="#"]')
             }
         }
     });
+
+
+   

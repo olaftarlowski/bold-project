@@ -74,7 +74,6 @@
                     p {
                         font-size: 14px;
                         line-height: 20px;
-                        letter-spacing: 0.007em;
                         text-align: justify;
 
                         @include mobile {
@@ -85,8 +84,10 @@
                 }
     
                 .apps-block__links {
-                    width: 148px;
                     height: 32px;
+                    display: flex;
+                    flex-direction: row;                 
+                    
 
                     @include mobile {
                         @include widthHeightResponsive;
@@ -98,46 +99,24 @@
                     }
 
                     .apps-block__link {
-                        display: inline-block;
-                        width: 32px;
-                        height: 32px;
-
-                        @include mobile {
-                            @include widthHeightResponsive;
-                        }
-
+                        margin-right: 20px;
+                        
+                            @include mobile {
+                                margin: 0;
+                            }
+                        
                         img {
+                            width: 32px;
+                            height: 32px;
+
                             @include mobile {
                                 width: 40px;
                                 height: 40px;
                             }
                         }
-                    }
-
-                    #apps__windows-logo {
-                        img {
-                            margin: 4px 0;
-
-                            @include mobile {
-                                margin: 0;
-                            }
-                        }
-                    }
-
-                    #apps__google-logo {
-                        margin-right: 20px;
-                        margin-left: -2px;
 
                         @include mobile {
-                            margin: 0;
-                        }
-                    }
-
-                    #apps__appst-logo {
-                        margin-right: 20px;
-
-                        @include mobile {
-                            margin: 0;
+                            @include widthHeightResponsive;
                         }
                     }
                 }
