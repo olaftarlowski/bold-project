@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .full-content {
   max-width: 1440px;
   margin: 0 auto;
@@ -478,9 +482,15 @@ input {
   padding: 16px 160px;
 }
 
+@media (max-width: 1024px) {
+  .header-main .navbar .navbar-container-margin {
+    padding: 16px 80px;
+  }
+}
+
 @media (max-width: 768px) {
   .header-main .navbar .navbar-container-margin {
-    padding: 16px 6%;
+    padding: 16px 10vw;
   }
 }
 

@@ -1,9 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 .full-content {
     max-width: 1440px;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
 }
-
 
 
 @import '../base/base';
